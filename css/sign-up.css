@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-signup {
+    margin-top: 120px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-signup {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-signup {
+    width: 80%;
+    height: 115%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 35px;
+    background: #f4deb3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px #817b7b;
+}
+
+
+.card-signup>form>h1 {
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.textfield>input::placeholder {
+    color: #000;
+}
+
+.textfield>label {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.botao {
+    display: grid;
+}
+
+.btn-signup {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 16px 0px;
+    margin-bottom: 20px;
+    border: 10px #000000;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px -12px #57432a;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #000000;
+    background: #FFC800;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+
+}
+
+.texto {
+    color: #cb550cba;
+    text-decoration: none;
+}
+
+.link {
+    color: #cb2c0c;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .card-signup {
+        width: 85%;
+    }
+
+    .card-signup>form>h1 {
+        font-size: 2vw;
+    }
+
+    .textfield>label {
+        font-size: 0, 1vw;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main-signup {
+        flex-direction: column;
+    }
+
+    .left-signup {
+        display: none;
+    }
+
+    .right-signup {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-signup {
+        width: 90%;
+    }
+
+    .card-signup>form>h1 {
+        font-size: 4vw;
+    }
+
+    .textfield {
+        margin-top: 8px;
+    }
+
+    .textfield>label {
+        font-size: 3vw;
+        margin-bottom: 5px;
+    }
+
+    .textfield>input {
+        height: 80%;
+    }
+}

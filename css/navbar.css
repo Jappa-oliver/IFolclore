@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.navbar {
+
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.html_navbar {
+    height: 80px;
+}
+
+
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    background: #fff;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.header {
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 0 40px;
+
+}
+
+.header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.navbar-logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.navbar-user img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.buscar {
+    width: 250px;
+    height: 40px;
+    background-color: #dad6d6;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: relative;
+    border-color: #000;
+
+}
+
+.buscar .lupa,
+.buscar .fechar-buscar {
+    color: #000;
+    min-width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar .fechar-buscar ion-icon {
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+
+.buscar .lupa ion-icon {
+    font-size: 25px;
+}
+
+.buscar .input-buscar {
+    position: absolute;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+
+}
+
+.buscar .input-buscar input {
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    background-color: #dad6d6;
+
+}

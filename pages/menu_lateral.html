@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu_lateral.css">
+
+</head>
+
+<body class="menu_lateral">
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="index.php">
+                    <span class="icon"><i class="logo"><img src="assets/home.png"></i></span>
+                    <span class="title">Home</span>
+
+                </a>
+            </li>
+            <li class="list">
+                <a href="signup.php">
+                    <span class="icon"><i><img src="assets/user.png"></i></span>
+                    <span class="title">Entre/Cadastre-se</span>
+
+                </a>
+            </li>
+            <li class="list">
+                <a href="lendas.php">
+                    <span class="icon"><i><img src="assets/fire.png"></i></span>
+                    <span class="title">Folclore</span>
+
+                </a>
+            </li>
+            <li class="list">
+                <a href="sobre.php">
+                    <span class="icon"><i><img src="assets/sobre.png"></i></span>
+                    <span class="title">Sobre o projeto</span>
+
+                </a>
+            </li>
+            <li class="list">
+                <a href="lendasT.php">
+                    <span class="icon"><i><img src="assets/fire.png"></i></span>
+                    <span class="title">Todas as Lendas</span>
+
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+    </script>
+
+</body>

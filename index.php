@@ -10,7 +10,25 @@
 </head>
 <body>
 
-<h1>hello world</h1>
+<?php
+
+    require_once('adm/conexao.php');
+
+    include_once('pages/navbar.html');
+    include_once('pages/menu_lateral.html');
+    
+    include_once('pages/mapa.html');
+    include_once('pages/footer.html');
+    
+    
+  
+   
+    
+    
+   
+    
+
+?>
     
 </body>
 </html>
